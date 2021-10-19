@@ -35,5 +35,5 @@ jobs:
     environment: dev
     steps:
       - uses: actions/checkout@v2
-      - name: deploy
+      - name: Use Node.js ${{ matrix.node-version }}
       - run: echo "run build"
