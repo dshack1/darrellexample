@@ -29,4 +29,10 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - run: echo "Run Build"
+#     - run: echo "Run Build"
+  deployment:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - name: deploy
+      - run: echo "run build"
