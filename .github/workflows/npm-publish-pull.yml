@@ -21,16 +21,12 @@ jobs:
 #       - run: npm test
 #       - run: echo "Run Build"
 
-  deploy:
-    needs: build
+  say_hello:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 14
-          registry-url: https://registry.npmjs.org/
-      - run: npm echo "Run Build"
+      - run: |
+          echo "Run Build"
+
 #       - run: npm publish
 #         env:
 #           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
