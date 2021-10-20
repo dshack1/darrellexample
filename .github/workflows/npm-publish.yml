@@ -19,6 +19,7 @@ jobs:
           node-version: 14
       - run: npm install
       - run: npm run start-test-db
+      - run: sleep 60s
       - run: npm run migrate
       - run: npm test
       - run: echo "Run Build"
