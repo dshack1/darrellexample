@@ -17,5 +17,5 @@ jobs:
       - run: npm install
       - run: npm install --save-dev @stryker-mutator/core
             # Only for small projects:
-      - run: Sleep 10s
+      - run: sleep 10s
       - run: npx stryker run
